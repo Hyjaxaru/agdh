@@ -1,6 +1,6 @@
 # A Game Developer's Handbook
 
-![Image title](assets/hero.png){ width="auto" }
+![Image title](assets/hero_transparent.png){ width="auto" }
 
 ***HEY!*** 👋
 

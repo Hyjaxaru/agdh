@@ -27,8 +27,6 @@ theme:
   logo: assets/logo.png
   favicon: assets/favicon.ico
 
-  custom_dir: docs/assets/overrides
-
   palette:
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
