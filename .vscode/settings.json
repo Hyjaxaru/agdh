@@ -1,0 +1,22 @@
+{
+    "workbench.colorCustomizations": {
+        "minimap.background": "#00000000",
+        "scrollbar.shadow": "#00000000"
+    },
+    "cSpell.words": [
+        "Albrock",
+        "arithmatex",
+        "fontawesome",
+        "gamemaker",
+        "godotengine",
+        "inlinehilite",
+        "kwds",
+        "linenums",
+        "mathjax",
+        "pygments",
+        "pymdownx",
+        "superfences",
+        "tasklist",
+        "twemoji"
+    ]
+}
