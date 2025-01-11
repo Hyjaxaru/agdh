@@ -13,8 +13,12 @@
         "kwds",
         "linenums",
         "mathjax",
+        "myoas",
+        "Platformer",
         "pygments",
         "pymdownx",
+        "shapeshooter",
+        "spacerocks",
         "superfences",
         "tasklist",
         "twemoji"

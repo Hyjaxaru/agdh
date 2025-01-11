@@ -1,3 +1,8 @@
+---
+hide:
+    - footer
+---
+
 # Real World Example
 
 Still TODO, sorry. Ill leave an anchor here so I get back to t

@@ -10,7 +10,7 @@
 If you've ever seen or used another game engine, such as [:simple-godotengine: Godot][godotengine],
 You may have noticed that :simple-gamemaker: GameMaker Studio lacks the familiar vector type.
 
-In most cases, this is fine. Objects provide `x` and `y` variables for their positions anyways.
+In most cases, this is fine. Objects provide `x` and `y` variables for their positions anyway.
 
 ***HOWEVER!***
 
@@ -86,7 +86,7 @@ Creating your own makeshift vectors can be done a number of ways in :simple-game
 
 All three of these methods will work just fine for any of your projects,
 but constructors are closers to what you'd find in [:simple-godotengine: Godot][godotengine].
-Constructors also have their own type that can be used in documentation. (See [Documenting Your Code](../essentials/docs.md))
+Constructors also have their own type that can be used in documentation. (See [:material-file-document: Documenting Your Code](../essentials/docs.md))
 
 Structs and Constructors also allow you to include functions, like we just did for `Vec2().magnitude()`.
 
