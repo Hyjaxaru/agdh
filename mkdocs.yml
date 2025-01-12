@@ -11,7 +11,12 @@ nav:
 
   - Tutorials:
       - tutorials/index.md
-      - Shape Shooter: tutorials/shape_shooter/shapeshooter.md
+      - Shape Shooter:
+          - tutorials/shape_shooter/index.md
+          - Step 1 - Creating a New Project: tutorials/shape_shooter/step1.md
+          - Step 2 - Sprites and Objects: tutorials/shape_shooter/step2.md
+          - Step 3 - Creating a Room: tutorials/shape_shooter/step3.md
+          - Step 4 - Making the Player Move: tutorials/shape_shooter/step4.md
 
   - Example:
       - placeholder_source/index.md
@@ -29,11 +34,16 @@ theme:
   favicon: assets/favicon.ico
 
   palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/link
+        name: Switch to light mode
+
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
       toggle:
-        icon: material/brightness-7
+        icon: material/weather-sunny
         name: Switch to dark mode
       primary: green
       accent: teal
@@ -42,8 +52,8 @@ theme:
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       toggle:
-        icon: material/brightness-4
-        name: Switch to light mode
+        icon: material/weather-night
+        name: Switch to automatic mode
       primary: green
       accent: lime
 
@@ -68,6 +78,7 @@ theme:
 
 plugins:
   - tags
+  - social
 
 markdown_extensions:
   - admonition

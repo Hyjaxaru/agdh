@@ -16,7 +16,7 @@ Hit the ground running and try some of these tutorials!
 
     **Difficulty:** :material-star::material-star-outline::material-star-outline::material-star-outline::material-star-outline: 
 
-    [:octicons-arrow-right-24: Read](shape_shooter/shapeshooter.md)
+    [:octicons-arrow-right-24: Read](shape_shooter/index.md)
 
 </div>
 
