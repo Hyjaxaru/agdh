@@ -2,10 +2,6 @@
 
 ![ADGH Logo](docs/assets/hero_transparent.png)
 
-For L6 Game Design students.
+You're welcome.
 
-A collection of helpful resources, guides, and rambles written by yours truly!
-
-(This exits purely for the GitHub repo)
-
-[Read!](docs/index.md)
+http://agdh.hyjaxaru.xyz

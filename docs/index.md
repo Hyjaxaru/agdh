@@ -47,3 +47,5 @@ That being said, this handbook should contain many of the things you need to kno
     
     [:octicons-arrow-right-24: Go Crazy](rambles/index.md)
 </div>
+
+You can view the source of this handbook on [:simple-github: GitHub](https://github.com/Hyjaxaru/agdh)
