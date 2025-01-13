@@ -45,4 +45,15 @@ Click on the "Instances" layer to select it, and then drag your player object in
 We've now placed an "instance" of our player object into the room
 ///
 
-Do the same with the Shape Objects
+Let's do the same for the obj_shape we created, but a couple more times.
+
+![6 Shape Objects in Room](img/step3-05.png)
+/// caption
+6 Shape objects in the room. pretty big huh?
+///
+
+Now if you run the game
+(by pressing F5, or by pressing the :material-play-outline:{ .lg .middle }button at the top of the screen)
+the game will open, but nothing moves...
+
+...So let's fix that!
