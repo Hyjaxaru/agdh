@@ -4,4 +4,4 @@
 
 You're welcome.
 
-http://agdh.hyjaxaru.xyz
+http://agdh.hyjaxaru.dev
