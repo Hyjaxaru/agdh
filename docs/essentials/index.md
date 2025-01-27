@@ -11,12 +11,7 @@ Thought you might find these useful :)
 
 <div class="grid cards" markdown>
 
--   :simple-gamemaker:{ .lg .middle } **The Basics of GML**
-    
-    ---
-    Learn the basics of :simple-gamemaker: GameMaker Language
 
-    [:octicons-arrow-right-24: Read](basics_gml.md)
 
 -   :material-file-document-edit:{ .lg .middle } **Documenting Your Code**
 
@@ -24,6 +19,20 @@ Thought you might find these useful :)
     Sure, you can write comments in your code. But what if those comments could be even more useful?
 
     [:octicons-arrow-right-24: Read](docs.md)
+
+</div>
+
+## :simple-gamemaker: GML Best Practice
+
+<div class="grid cards" markdown>
+
+-   :material-variable:{ .lg .middle } **Variables**
+    
+    ---
+    Feather likes to complain about them...
+
+    [:octicons-arrow-right-24: Read](variables.md)
+
 
 </div>
 

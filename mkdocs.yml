@@ -6,7 +6,7 @@ nav:
 
   - Essentials:
       - essentials/index.md
-      - The Basics of GML: essentials/basics_gml.md
+      - Variables: essentials/variables.md
       - Documenting your Code: essentials/docs.md
 
   - Tutorials:
