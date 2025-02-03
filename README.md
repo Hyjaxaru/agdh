@@ -2,6 +2,4 @@
 
 ![ADGH Logo](docs/assets/hero_transparent.png)
 
-You're welcome.
-
-http://agdh.hyjaxaru.xyz
+http://agdh.hyjaxaru.dev

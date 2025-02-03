@@ -1,3 +1,8 @@
+---
+title: Title
+template: home.html
+---
+
 # A Game Developer's Handbook
 
 ![Image title](assets/hero_transparent.png){ width="auto" }

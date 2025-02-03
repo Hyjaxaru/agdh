@@ -1,5 +1,3 @@
-# Documenting your Code
-
 [jsdoc]: https://jsdoc.app/
 [feather]: https://manual.gamemaker.io/lts/en/Setting_Up_And_Version_Information/IDE_Preferences/Feather_Settings.htm
 [feather-types]: https://manual.gamemaker.io/lts/en/The_Asset_Editors/Code_Editor_Properties/Feather_Data_Types.htm

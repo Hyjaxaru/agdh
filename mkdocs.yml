@@ -13,10 +13,10 @@ nav:
       - tutorials/index.md
       - Shape Shooter:
           - tutorials/shape_shooter/index.md
-          - Step 1 - Creating a New Project: tutorials/shape_shooter/step1.md
-          - Step 2 - Sprites and Objects: tutorials/shape_shooter/step2.md
-          - Step 3 - Creating a Room: tutorials/shape_shooter/step3.md
-          - Step 4 - Making the Player Move: tutorials/shape_shooter/step4.md
+          - Creating a New Project: tutorials/shape_shooter/step1.md
+          - Sprites and Objects: tutorials/shape_shooter/step2.md
+          - Creating a Room: tutorials/shape_shooter/step3.md
+          - Making the Player Move: tutorials/shape_shooter/step4.md
 
   - Example:
       - placeholder_source/index.md
@@ -25,13 +25,15 @@ nav:
       - rambles/index.md
       - Digital NoteBook: rambles/notebook.md
       - The Time and Place for Vectors: rambles/vectors.md
-      - The Famous Semi-Colon: rambles/semicolon.md
+      - The Semi-Colon Problem: rambles/semicolon.md
 
 theme:
   name: material
 
   logo: assets/logo.png
   favicon: assets/favicon.ico
+
+  custom_dir: docs/assets/overrides
 
   palette:
     # Palette toggle for light mode
