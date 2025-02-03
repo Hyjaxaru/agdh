@@ -1,6 +1,16 @@
+# site details
 site_name: AGD_Handbook
-site_url: https://agdh.hyjaxaru.xyz
+site_description: Essential resources for L6 Game Design, all in one place.
+site_url: https://agdh.hyjaxaru.dev # this must be accurate, or the social plugin will not work properly
 
+# git repo details
+repo_url: https://github.com/hyjaxaru/agdh
+repo_name: AGD_Handbook
+edit_uri: edit/main/docs/
+
+# navigation tree
+# allows you to specify the path of different docs
+# while having a different folder structure
 nav:
   - Home: index.md
 
@@ -27,14 +37,27 @@ nav:
       - The Time and Place for Vectors: rambles/vectors.md
       - The Semi-Colon Problem: rambles/semicolon.md
 
+# theme data
+# this is where the bulk of the customisation is
+# see: https://squidfunk.github.io/mkdocs-material/
 theme:
   name: material
 
+  # icons
   logo: assets/logo.png
   favicon: assets/favicon.ico
+  icon:
+    repo: simple/github # top right corner with repo
+    # edit: material/pencil # "edit this page" icon
+    # view: material/eye # "view source of this page" icon
 
+  # directory for override html files
+  # see: https://squidfunk.github.io/mkdocs-material/customization/
   custom_dir: docs/assets/overrides
 
+  # colour palette with light and dark themes
+  # should automatically choose based on system theme
+  # see: https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/
   palette:
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
@@ -54,32 +77,43 @@ theme:
       primary: green
       accent: lime
 
+  # features
+  # this decides how the docs act, and how they appear
   features:
-    # - navigation.tabs.sticky
-    - announce.dismiss
-    - content.code.annotate
-    - content.code.copy
-    - content.tabs.link
-    - content.tooltips
-    - navigation.footer
-    - navigation.indexes
-    - navigation.instant
-    - navigation.instant.preview
-    - navigation.instant.progress
-    - navigation.sections
-    - navigation.tabs
-    - navigation.top
-    - navigation.tracking
-    - search.highlight
-    - search.share
-    - search.suggest
-    - toc.follow
-    - toc.integrate
+    # - navigation.tabs.sticky      # sticks tabs to the top of the screen always
+    - announce.dismiss              # dismiss button for top announcements
+    - content.action.edit           # "edit this page" button
+    - content.action.view           # "view source of this page" button
+    - content.code.annotate         # annotations in code block comments
+    - content.code.copy             # copy button in code blocks
+    - content.tabs.link             # sync content tabs with similar names on a page
+    - content.tooltips              # tooltips on links
+    - navigation.footer             # footer navigation? (I forgot what this does exactly)
+    - navigation.indexes            # allows categories to have a main page
+    - navigation.instant            # stops the website from reloading for every internal link
+    - navigation.instant.preview    # insiders feature, allows previewing of internal links
+    - navigation.instant.progress   # page load progress indicator
+    - navigation.sections           # sections
+    - navigation.tabs               # top tabs for navigation
+    - navigation.top                # top nav?
+    - navigation.tracking           # updates the url with page position (anchors)
+    - search.highlight              # highlights matches after search
+    - search.share                  # unsure
+    - search.suggest                # search suggestions
+    - toc.follow                    # auto-scrolls the sidebar to match page position
+    - toc.integrate                 # merges right sidebar into left
 
+# plugins
+# extra features that make the site better
 plugins:
-  - tags
-  - search
-  - social
+  - tags                          # tag system for pages
+  - search                        # search for anything in the docs
+  - social                        # embed links
+  - git-committers:               # shows who worked on a page
+      repository: hyjaxaru/agdh
+      branch: main
+  - git-revision-date-localized:  # shows page creation and last edit dates
+      enable_creation_date: true
 
 markdown_extensions:
   - admonition
@@ -117,14 +151,8 @@ markdown_extensions:
 
 extra:
   social:
-    - icon: fontawesome/solid/paper-plane
-      link: mailto:<noah.albrock@gmail.com>
-      name: Email me
     - icon: fontawesome/brands/github
-      link: https://github.com/Hyjaxaru
-      name: Hyjaxaru on GitHub
-    - icon: fontawesome/brands/discord
-      link: https://discordapp.com/users/896071943382528101
-      name: Hyjaxaru on Discord
+      link: https://github.com/Hyjaxaru/agdh
+      name: AGDH on GitHub
 
 copyright: Copyright &copy 2025 Hyjaxaru

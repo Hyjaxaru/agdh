@@ -1,6 +1,5 @@
 ---
 title: Title
-template: home.html
 ---
 
 # A Game Developer's Handbook
