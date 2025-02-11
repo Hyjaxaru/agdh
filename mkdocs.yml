@@ -1,12 +1,12 @@
 # site details
 site_name: AGD_Handbook
 site_description: Essential resources for L6 Game Design, all in one place.
-site_url: https://agdh.hyjaxaru.dev # this must be accurate, or the social plugin will not work properly
+site_url: https://agdh.hyjaxaru.dev
 
 # git repo details
-repo_url: https://github.com/hyjaxaru/agdh
-repo_name: AGD_Handbook
-edit_uri: edit/main/docs/
+repo_url: https://github.com/hyjaxaru/agdh  # github repo url
+repo_name: AGD_Handbook                     # seems to be consmetic for the top-right corner
+edit_uri: edit/main/docs/                   # path to docs. dont change this
 
 # navigation tree
 # allows you to specify the path of different docs
@@ -14,13 +14,16 @@ edit_uri: edit/main/docs/
 nav:
   - Home: index.md
 
+  # essential links, aricles, etc
   - Essentials:
       - essentials/index.md
       - Variables: essentials/variables.md
       - Documenting your Code: essentials/docs.md
 
+  # links to tutorials and even supports written ones
   - Tutorials:
       - tutorials/index.md
+      # author: hyjaxaru
       - Shape Shooter:
           - tutorials/shape_shooter/index.md
           - Creating a New Project: tutorials/shape_shooter/step1.md
@@ -28,9 +31,12 @@ nav:
           - Creating a Room: tutorials/shape_shooter/step3.md
           - Making the Player Move: tutorials/shape_shooter/step4.md
 
+  # placeholder source code examples
   - PlaceholderGame:
       - placeholder_game/index.md
-
+  
+  # random rambles that are somewhat interesting, and marginally related
+  # feel free to add as many as you want
   - Rambles:
       - rambles/index.md
       - Digital NoteBook: rambles/notebook.md
@@ -60,22 +66,22 @@ theme:
   # see: https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/
   palette:
     # Palette toggle for light mode
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      toggle:
-        icon: material/weather-sunny
-        name: Switch to dark mode
-      primary: green
-      accent: teal
+    - media: "(prefers-color-scheme: light)"  # auto detect system theme
+      scheme: default                         # material for mkdocs light mode
+      toggle:                                 # toggle switch settings
+        icon: material/weather-sunny          # icon
+        name: Switch to dark mode             # tooltip
+      primary: green                          # primary colour
+      accent: teal                            # accent colour (links, etc)
 
     # Palette toggle for dark mode
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      toggle:
-        icon: material/weather-night
-        name: Switch to light mode
-      primary: green
-      accent: lime
+    - media: "(prefers-color-scheme: dark)"   # auto detect system theme
+      scheme: slate                           # material for mkdocs dark mode
+      toggle:                                 # toggle switch settings
+        icon: material/weather-night          # icon
+        name: Switch to light mode            # tooltip
+      primary: green                          # primary colour
+      accent: lime                            # accent colour (links, etc) 
 
   # features
   # this decides how the docs act, and how they appear
@@ -106,15 +112,17 @@ theme:
 # plugins
 # extra features that make the site better
 plugins:
-  - tags                          # tag system for pages
-  - search                        # search for anything in the docs
-  - social                        # embed links
-  - git-committers:               # shows who worked on a page
-      repository: hyjaxaru/agdh
-      branch: main
-  - git-revision-date-localized:  # shows page creation and last edit dates
-      enable_creation_date: true
+  - tags                            # tag system for pages
+  - search                          # search for anything in the docs
+  - social                          # embed links
+  - git-committers:                 # shows who worked on a page
+      repository: hyjaxaru/agdh     # repository excluding https://gthub.com
+      branch: main                  # branch to link to
+  - git-revision-date-localized:    # shows page creation and last edit dates
+      enable_creation_date: true    # enabled showing page creation date
 
+# extensions
+# mostly dependancy for the markdown renderer, and `features` above
 markdown_extensions:
   - admonition
   - attr_list
@@ -149,7 +157,9 @@ markdown_extensions:
       custom_checkbox: true
   - pymdownx.tilde
 
+# extra feature customisation
 extra:
+  # social plugin. Lets you set the icons that show at the bottom of the screen
   social:
     - icon: fontawesome/solid/globe
       link: https://hyjaxaru.dev
@@ -158,4 +168,7 @@ extra:
       link: https://github.com/Hyjaxaru/agdh
       name: AGDH on GitHub
 
+# copywrite notice
+# I literally did 1 google search on how to write these
+# sp feel free to correct
 copyright: Copyright &copy 2025 Hyjaxaru

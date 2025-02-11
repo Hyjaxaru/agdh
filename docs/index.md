@@ -44,10 +44,10 @@ That being said, this handbook should contain many of the things you need to kno
     [:octicons-arrow-right-24: View Source](placeholder_source/index.md)
 
 
--   :material-brain:{ .lg .middle } **Rambles of a Mad Man (Me)**
+-   :material-brain:{ .lg .middle } **Random Rambles**
    
     ---
-    Randomly related and written by yours truly. You may, or may not, find these useful.
+    Randomly related rambles that are somewhat interesting.
     
     [:octicons-arrow-right-24: Go Crazy](rambles/index.md)
 </div>

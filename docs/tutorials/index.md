@@ -75,5 +75,3 @@ You should have a paper copy of these in your classroom as well.
     Welcome to **Little Town** - a major new tutorial for GameMaker Studio 2. The following tutorial provides an introduction to the principles of game development using GameMaker.
 
     [**Go to Tutorial** :octicons-link-external-24:][masag]
-
-</div>
