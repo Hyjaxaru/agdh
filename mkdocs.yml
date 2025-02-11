@@ -28,8 +28,8 @@ nav:
           - Creating a Room: tutorials/shape_shooter/step3.md
           - Making the Player Move: tutorials/shape_shooter/step4.md
 
-  - Example:
-      - placeholder_source/index.md
+  - PlaceholderGame:
+      - placeholder_game/index.md
 
   - Rambles:
       - rambles/index.md
@@ -151,6 +151,9 @@ markdown_extensions:
 
 extra:
   social:
+    - icon: fontawesome/solid/globe
+      link: https://hyjaxaru.dev
+      name: My Other Work
     - icon: fontawesome/brands/github
       link: https://github.com/Hyjaxaru/agdh
       name: AGDH on GitHub
