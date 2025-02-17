@@ -1,0 +1,8 @@
+# I don't think I need to explain why VSCode 
+# preferences shouldn't be saved. That's personal
+.vscode
+
+# Forces the production site to create new cache files.
+# This avoids a crash caused by malformed git-committers file
+# caused by a git merge. Also best practice (I think)
+.cache

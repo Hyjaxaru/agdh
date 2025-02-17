@@ -5,8 +5,8 @@ site_url: https://agdh.hyjaxaru.dev
 
 # git repo details
 repo_url: https://github.com/hyjaxaru/agdh  # github repo url
-repo_name: AGD_Handbook                     # seems to be consmetic for the top-right corner
-edit_uri: edit/main/docs/                   # path to docs. dont change this
+repo_name: AGD_Handbook                     # seems to be cosmetic for the top-right corner
+edit_uri: edit/main/docs/                   # path to docs. don't change this
 
 # navigation tree
 # allows you to specify the path of different docs
@@ -14,16 +14,17 @@ edit_uri: edit/main/docs/                   # path to docs. dont change this
 nav:
   - Home: index.md
 
-  # essential links, aricles, etc
+  # essential links, articles, etc
   - Essentials:
       - essentials/index.md
       - Variables: essentials/variables.md
       - Documenting your Code: essentials/docs.md
+      - The Semi-Colon Problem: essentials/semicolon.md
 
   # links to tutorials and even supports written ones
   - Tutorials:
       - tutorials/index.md
-      # author: hyjaxaru
+      # author: Hyjaxaru
       - Shape Shooter:
           - tutorials/shape_shooter/index.md
           - Creating a New Project: tutorials/shape_shooter/step1.md
@@ -31,9 +32,14 @@ nav:
           - Creating a Room: tutorials/shape_shooter/step3.md
           - Making the Player Move: tutorials/shape_shooter/step4.md
 
-  # placeholder source code examples
+  # placeholder game. from design to source code
   - PlaceholderGame:
       - placeholder_game/index.md
+      - Design:
+        - placeholder_game/design/index.md
+      - Development:
+        - placeholder_game/develop/index.md
+      - Source Code: https://github.com/Hyjaxaru/placeholdergame
   
   # random rambles that are somewhat interesting, and marginally related
   # feel free to add as many as you want
@@ -41,7 +47,6 @@ nav:
       - rambles/index.md
       - Digital NoteBook: rambles/notebook.md
       - The Time and Place for Vectors: rambles/vectors.md
-      - The Semi-Colon Problem: rambles/semicolon.md
 
 # theme data
 # this is where the bulk of the customisation is
@@ -60,6 +65,13 @@ theme:
   # directory for override html files
   # see: https://squidfunk.github.io/mkdocs-material/customization/
   custom_dir: docs/assets/overrides
+
+  # custom fonts. because yes!
+  # if you are not using JetBrains Mono for your code,
+  # what are you even doing?
+  font:
+    text: Mona Sans
+    code: JetBrains Mono
 
   # colour palette with light and dark themes
   # should automatically choose based on system theme
@@ -114,15 +126,15 @@ theme:
 plugins:
   - tags                            # tag system for pages
   - search                          # search for anything in the docs
-  - social                          # embed links
+  - social                          # embed links (just discord as far as I know 💀)
   - git-committers:                 # shows who worked on a page
-      repository: hyjaxaru/agdh     # repository excluding https://gthub.com
-      branch: main                  # branch to link to
+      repository: hyjaxaru/agdh     # repository excluding the `https://github.com` part
+      branch: main                  # branch to link to. Should be main in most cases
   - git-revision-date-localized:    # shows page creation and last edit dates
       enable_creation_date: true    # enabled showing page creation date
 
 # extensions
-# mostly dependancy for the markdown renderer, and `features` above
+# mostly dependency for the markdown renderer, and `features` above
 markdown_extensions:
   - admonition
   - attr_list
@@ -168,7 +180,7 @@ extra:
       link: https://github.com/Hyjaxaru/agdh
       name: AGDH on GitHub
 
-# copywrite notice
+# copyright notice
 # I literally did 1 google search on how to write these
-# sp feel free to correct
+# so feel free to correct if wrong
 copyright: Copyright &copy 2025 Hyjaxaru

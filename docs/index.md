@@ -2,7 +2,7 @@
 title: Title
 ---
 
-# A Game Developer's Handbook
+# A Game Designer's Handbook
 
 ![Image title](assets/hero_transparent.png){ width="auto" }
 

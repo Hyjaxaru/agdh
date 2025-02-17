@@ -30,15 +30,16 @@ function add(_a, _b) {
 
 	But why would I write all that, when a simple sentence would be enough?
 
-That's just it. We arn't writing these for you.
+That's just it. We arn't writing these for you!
 We write them like this so that the engine can read them.
 
-:simple-gamemaker: GameMaker Studio will take these lines, and generate documentation for you.
+:simple-gamemaker: GameMaker Studio will take these lines
+and generate documentation for you.
 Said documentation shows up in the editor to make your life easier:
 
-- Shows parameter names at the bottom of the code editor window
+- Shows parameter names at the bottom of the code editor box, to keep you on track
 - Full documentation when you hover over a function with your mouse
-- Even [:material-feather: Feather][feather] uses the data to force parameter types.
+- [:material-feather: Feather][feather] uses the data to force parameter types.
 
 As far as i've seen, these rules only apply to functions and constructors (arguably still functions).
 
@@ -55,10 +56,13 @@ Note that this tag isn't required for the documentation to be generated, but jus
 /// @param {Real}	_a	The first value.
 /// @param {Real}	_b	The second value.
 /// @returns {Real}
-function(_a, _b) {
+function add(_a, _b) {
 	return _a + _b;
 }
 ```
+
+</div>
+<div class="grid" markdown>
 
 The `@description` tag allows you to provide... well, a description for the function.
 
@@ -68,14 +72,17 @@ The `@description` tag allows you to provide... well, a description for the func
 /// @param {Real}	_a	The first value.
 /// @param {Real}	_b	The second value.
 /// @returns {Real}
-function(_a, _b) {
+function add(_a, _b) {
 	return _a + _b;
 }
 ```
 
+</div>
+<div class="grid" markdown>
+
 The `@param` tag allows you to provide the correct names and types of your function's parameters.
 It also allows you to include a small description of said parameter.
-The type of a parameter is included in the :material-code-braces: curly brackets. A list of valid types can be found in the [:simple-gamemaker: GameMaker Studio Manual][feather-types], or in [this forum post][feather-forum] from 2022.
+The type of a parameter is included in the :material-code-braces: curly brackets. A list of valid types can be found in the [:simple-gamemaker: GameMaker Studio Manual][feather-types], or in [this forum post from 2022][feather-forum].
 
 ``` javascript hl_lines="3 4"
 /// @function 			add()
@@ -83,12 +90,16 @@ The type of a parameter is included in the :material-code-braces: curly brackets
 /// @param {Real}	_a	The first value.
 /// @param {Real}	_b	The second value.
 /// @returns {Real}
-function(_a, _b) {
+function add(_a, _b) {
 	return _a + _b;
 }
 ```
 
+</div>
+<div class="grid" markdown>
+
 The `@returns` tag allows you to provide the type of return value. It's that simple.
+`@return` is also supported.
 
 ``` javascript hl_lines="5"
 /// @function 			add()
@@ -96,7 +107,7 @@ The `@returns` tag allows you to provide the type of return value. It's that sim
 /// @param {Real}	_a	The first value.
 /// @param {Real}	_b	The second value.
 /// @returns {Real}
-function(_a, _b) {
+function add(_a, _b) {
 	return _a + _b;
 }
 ```

@@ -17,11 +17,4 @@ Most here are on topic with :simple-gamemaker: GameMaker Studio though.
 
     [:octicons-arrow-right-24: Read](vectors.md)
 
--   **:material-code-tags:{ .lg .middle } The Semi-colon Problem**
-
-    ---
-    A programming language either requires them, or despises them. :simple-gamemaker: GameMaker Studio doesn't seem picky
-
-    [:octicons-arrow-right-24: Read](semicolon.md)
-
 </div>
