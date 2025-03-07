@@ -1,8 +1,9 @@
-# I don't think I need to explain why VSCode 
-# preferences shouldn't be saved. That's personal
+# I don't think I need to explain why .vscode is here 
+# preferences shouldn't be saved. That's personal to you and me
 .vscode
 
 # Forces the production site to create new cache files.
-# This avoids a crash caused by malformed git-committers file
-# caused by a git merge. Also best practice (I think)
+# This avoids a crash caused with malformed git-committers files
+# that I caused during a git merge. Also best practice...
+# (I think, don't quote me on that)
 .cache

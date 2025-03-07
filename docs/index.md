@@ -8,16 +8,20 @@ title: Title
 
 ***HEY!*** 👋
 
+!!! note inline end
+    This handbook (at least for now) is for the development side of the course,
+    not the theory.
+
 If you're reading this, you likely picked "L6 Game Design" as one of your subject choices. If so, then that's awesome!
 
-Arguably this is the best class in the whole school.
+Arguably it's the best class in the whole school.
 I mean, you spend the year making and playing games!
 What's not to love?
+Just remember to take it seriously...
 
 That being said, this handbook should contain many of the things you need to know to get started in making games, specifically in :simple-gamemaker: GameMaker Studio.
 
-!!! note "Please Note"
-    This (at least for now) is for the development side of the course, not the theory.
+
 
 <div class="grid cards" markdown>
 
@@ -36,12 +40,12 @@ That being said, this handbook should contain many of the things you need to kno
     [:octicons-arrow-right-24: Get started](tutorials/index.md)
 
 
--   :material-gamepad-variant:{ .lg .middle } **Example Source Code**
+-   :material-gamepad-variant:{ .lg .middle } **Example Game**
    
     ---
     Read the source code of the game I made: Placeholder! (Yes, that is actually the name)
     
-    [:octicons-arrow-right-24: View Source](placeholder_source/index.md)
+    [:octicons-arrow-right-24: View Source](placeholder_game/index.md)
 
 
 -   :material-brain:{ .lg .middle } **Random Rambles**

@@ -27,11 +27,11 @@ jobs:
             mkdocs-material-
       - name: Install - Material for MKDocs
         run: pip install mkdocs-material
-      - name: Install - MMKD Imaging
         run: pip install "mkdocs-material[imaging]"
-      - name: Install - MMKD Date Plugin
+      - name: Install - Material for MKDocs Plugins
         run: pip install mkdocs-git-revision-date-localized-plugin
-      - name: Install - MMKD Git Committers Plugin
         run: pip install mkdocs-git-committers-plugin-2
       - name: Build site
+        env:
+          GH_COMMIT_PLUGIN_API_KEY: ${{ secrets.GH_COMMIT_PLUGIN_API_KEY }}
         run: mkdocs gh-deploy --force

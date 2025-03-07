@@ -32,14 +32,11 @@ nav:
           - Creating a Room: tutorials/shape_shooter/step3.md
           - Making the Player Move: tutorials/shape_shooter/step4.md
 
-  # placeholder game. from design to source code
-  - PlaceholderGame:
-      - placeholder_game/index.md
-      - Design:
-        - placeholder_game/design/index.md
-      - Development:
-        - placeholder_game/develop/index.md
-      - Source Code: https://github.com/Hyjaxaru/placeholdergame
+  # game showcase. Put games that surpassed expectations here!
+  - Game Showcase:
+    - showcase/index.md
+    - 2024-25:
+      - showcase/2425/placeholdergame.md
   
   # random rambles that are somewhat interesting, and marginally related
   # feel free to add as many as you want
@@ -59,22 +56,21 @@ theme:
   favicon: assets/favicon.ico
   icon:
     repo: simple/github # top right corner with repo
-    # edit: material/pencil # "edit this page" icon
-    # view: material/eye # "view source of this page" icon
 
   # directory for override html files
   # see: https://squidfunk.github.io/mkdocs-material/customization/
   custom_dir: docs/assets/overrides
 
   # custom fonts. because yes!
-  # if you are not using JetBrains Mono for your code,
-  # what are you even doing?
+  # these get pulled from Google Fonts, so don't worry about dependency.
+  # If you arn't using JetBrains Mono for your code, what are you even doing?
+
   font:
     text: Mona Sans
     code: JetBrains Mono
 
   # colour palette with light and dark themes
-  # should automatically choose based on system theme
+  # should automatically choose based on system theme (the american spelling is required)
   # see: https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/
   palette:
     # Palette toggle for light mode
@@ -98,7 +94,6 @@ theme:
   # features
   # this decides how the docs act, and how they appear
   features:
-    # - navigation.tabs.sticky      # sticks tabs to the top of the screen always
     - announce.dismiss              # dismiss button for top announcements
     - content.action.edit           # "edit this page" button
     - content.action.view           # "view source of this page" button
@@ -124,17 +119,19 @@ theme:
 # plugins
 # extra features that make the site better
 plugins:
-  - tags                            # tag system for pages
-  - search                          # search for anything in the docs
-  - social                          # embed links (just discord as far as I know 💀)
-  - git-committers:                 # shows who worked on a page
-      repository: hyjaxaru/agdh     # repository excluding the `https://github.com` part
-      branch: main                  # branch to link to. Should be main in most cases
-  - git-revision-date-localized:    # shows page creation and last edit dates
-      enable_creation_date: true    # enabled showing page creation date
+  - tags                                    # tag system for pages
+  - search                                  # search for anything in the docs
+  - social                                  # embed links (just discord as far as I know 💀)
+  - git-committers:                         # shows who worked on a page
+      repository: hyjaxaru/agdh             # repository excluding the `https://github.com` part
+      branch: main                          # branch to link to. Should be main in most cases
+      token: !ENV GH_COMMIT_PLUGIN_API_KEY  # defined in github action. Expires 07/03/26
+  - git-revision-date-localized:            # shows page creation and last edit dates
+      enable_creation_date: true            # enabled showing page creation date
 
 # extensions
-# mostly dependency for the markdown renderer, and `features` above
+# mostly dependency for the markdown renderer, and `features` above.
+# don't think too hard about this one.
 markdown_extensions:
   - admonition
   - attr_list
@@ -173,14 +170,20 @@ markdown_extensions:
 extra:
   # social plugin. Lets you set the icons that show at the bottom of the screen
   social:
-    - icon: fontawesome/solid/globe
+    # School website
+    - icon: fontawesome/solid/school
+      link: https://www.dunfermlinehigh.co.uk/
+      name: School Website
+    # My portfolio / other work
+    - icon: fontawesome/solid/briefcase
       link: https://hyjaxaru.dev
       name: My Other Work
+    # Link to the project on github
     - icon: fontawesome/brands/github
       link: https://github.com/Hyjaxaru/agdh
       name: AGDH on GitHub
 
 # copyright notice
-# I literally did 1 google search on how to write these
-# so feel free to correct if wrong
+# I literally did 1 google search on how to write this
+# so feel free to correct it if it's wrong / needs updated
 copyright: Copyright &copy 2025 Hyjaxaru
