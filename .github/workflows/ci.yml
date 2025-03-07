@@ -26,11 +26,13 @@ jobs:
           restore-keys: |
             mkdocs-material-
       - name: Install - Material for MKDocs
-        run: pip install mkdocs-material
-        run: pip install "mkdocs-material[imaging]"
+        run: |
+          pip install mkdocs-material
+          pip install "mkdocs-material[imaging]"
       - name: Install - Material for MKDocs Plugins
-        run: pip install mkdocs-git-revision-date-localized-plugin
-        run: pip install mkdocs-git-committers-plugin-2
+        run: |
+          pip install mkdocs-git-revision-date-localized-plugin
+          pip install mkdocs-git-committers-plugin-2
       - name: Build site
         env:
           GH_COMMIT_PLUGIN_API_KEY: ${{ secrets.GH_COMMIT_PLUGIN_API_KEY }}
